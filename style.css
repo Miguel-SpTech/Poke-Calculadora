@@ -1,0 +1,12 @@
+.colorred {
+    color: red;
+}
+.colorwhite {
+    color: white;
+}
+.divprinc {
+    width: 400;
+    height: fit-content;
+    border:  #ffffff;
+    border-radius: 10px;
+}
