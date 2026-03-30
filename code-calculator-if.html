@@ -1,0 +1,132 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon binary Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#000000">
+    <center>
+        <div class="divprinc">
+            <h1 class="colorred">Pokémon Binary Machine</h1>
+            <span class="colorred">veja qual é o pokemon equivalente ao seu numero</span>
+            <br><span class="colorred">pokemon disponiveis atualmente: 1-7, 9-10, 59, 94, 121, 158, 197, 249, 445, 553, 567, 579, 587, 623, 643-644, 649 </span>
+        </div>
+        <div class="divprinc">
+            <h3 class="colorred">Digite um número decimal:</h3>
+            <input id="demo1" type="text" placeholder="Ex: 42" oninput="converter()">
+        </div><br><br>
+        <div class="divprinc colorwhite">
+            <h3>Resultados:</h3>
+            <p>Octal:
+            <div id="demo2" ></div>
+            </p>
+            <p>Hexadecimal:
+            <div id="demo3" ></div>
+            </p>
+            <p>Binário:
+            <div id="demo4" ></div>
+            </p>
+        </div>
+        <div id="div_desc" class="colorwhite"></div>
+        <div id="div_img" class="divimg"></div> 
+    </center>
+
+    <script>
+
+
+        function converter() {
+            var decimal = Number(demo1.value);
+            let octal = decimal.toString(8);
+            let hexadecimal = decimal.toString(16);
+            let binary = decimal.toString(2);
+            
+
+            demo2.innerHTML = octal;
+            demo3.innerHTML = hexadecimal;
+            demo4.innerHTML = binary;
+
+            if (decimal==1){
+                div_desc.innerHTML = "Bulbasaur nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P1.gif" alt="">'
+            } else if (decimal == 2) {
+                div_desc.innerHTML = "Ivysaur nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P2.gif" alt="">'
+            } else if (decimal == 3) {
+                div_desc.innerHTML = "Venasaur nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P3.gif" alt="">'
+            } else if (decimal == 4) {
+                div_desc.innerHTML = "Charmander nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P4.gif" alt="">'
+            } else if (decimal == 5) {
+                div_desc.innerHTML = "Charmelion nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P5.gif" alt="">'
+            } else if (decimal == 6) {
+                div_desc.innerHTML = "Charizard nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P6.gif" alt="">'
+            } else if (decimal == 7) {
+                div_desc.innerHTML = "Squirtle nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P7.gif" alt="">'
+            } else if (decimal == 9) {
+                div_desc.innerHTML = "Blastoise nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P9.gif" alt="">'
+            } else if (decimal == 10) {
+                div_desc.innerHTML = "Caterpie nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P10.gif" alt="">'
+            } else if (decimal == 59) {
+                div_desc.innerHTML = "Arcanaine nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P59.gif" alt="">'
+            } else if (decimal == 94) {
+                div_desc.innerHTML = "Gengar nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P94.gif" alt="">'
+            } else if (decimal == 121) {
+                div_desc.innerHTML = "Starmie nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P121.gif" alt="">'
+            } else if (decimal == 158) {
+                div_desc.innerHTML = "Totodile nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P158.gif" alt="">'
+            } else if (decimal == 197) {
+                div_desc.innerHTML = "Umbreom nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P197.gif" alt="">'
+            } else if (decimal == 249) {
+                div_desc.innerHTML = "Lugia nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P249.gif" alt="">'
+            } else if (decimal == 445) {
+                div_desc.innerHTML = "Garchomp nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P445.gif" alt="">'
+            } else if (decimal == 553) {
+                div_desc.innerHTML = "Krokodile nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P553.gif" alt="">'
+            } else if (decimal == 567) {
+                div_desc.innerHTML = "Archeops nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P567.gif" alt="">'
+            } else if (decimal == 579) {
+                div_desc.innerHTML = "Reuniclus nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P579.gif" alt="">'
+            } else if (decimal == 587) {
+                div_desc.innerHTML = "Emolga nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P587.gif" alt="">'
+            } else if (decimal == 623) {
+                div_desc.innerHTML = "Golurk nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P623.gif" alt="">'
+            } else if (decimal == 643) {
+                div_desc.innerHTML = "Reshiram nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P643.gif" alt="">'
+            } else if (decimal == 644) {
+                div_desc.innerHTML = "Zekrom nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P644.gif" alt="">'
+            } else if (decimal == 649) {
+                div_desc.innerHTML = "Genesect nº " + decimal + "₁₀/ " + octal + "₈/ "+ hexadecimal +"₁₆/ "+ binary +"₂<br>"
+                div_img.innerHTML = '<img src="P649.gif" alt="">'
+            }
+        }
+    </script>
+</body>
+
+</html>
